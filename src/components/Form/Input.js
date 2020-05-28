@@ -1,19 +1,48 @@
 import React from 'react';
 import './Input.css';
 
-const Input = ({id, type, placeholder, value, label, errorText}) => {
-	return(
-		<div className='input-component'>
-			<label>{label}</label>
-			<input 
-				id={id} 
-				type={type}
-				placeholder={placeholder}
-				value={value}
-			/> 
-			{errorText && <div>Please enter a valid {id}</div>}
-		</div>
-	)
+class Input extends React.Component {
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			value: '',
+			isValid: false,
+			isTouched: false
+		}
+	}
+
+	handleTouch = () => {
+		this.setState({
+			isTouched: true
+		})
+	}
+
+	handleInputChange = async (event) => {
+		await this.setState({
+			isValid: true, //TO CHANGE!!!!!!!!
+			value: event.target.value
+		})
+		//do some callback
+		console.log(this.state)
+	}
+
+	render(){
+		return(
+			<div className='input-component'>
+				<label>{this.props.label}</label>
+				<input 
+					id={this.props.id} 
+					type={this.props.type}
+					placeholder={this.props.placeholder}
+					onBlur={this.handleTouch}
+					value={this.state.value}
+					onChange={this.handleInputChange}
+				/> 
+				{this.state.isTouched && <p>{this.props.errorText}</p>}
+			</div>
+		)
+	}
 }
 
 export default Input

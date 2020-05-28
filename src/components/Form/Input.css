@@ -1,0 +1,26 @@
+label {
+	font-size: 70%;
+	font-weight: bold;
+	display: block;
+	color: #265cff;
+}
+
+input {
+  	font: inherit;
+  	font-size: 70%;
+  	border: 1px solid #ccc;
+  	border-radius: 5px;
+  	background: white;
+  	padding: 0.15rem 0.25rem;
+}
+
+.input-component {
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.invalid {
+	color: red;
+	border-color: red;
+  	background: #ffd1d1;
+}
