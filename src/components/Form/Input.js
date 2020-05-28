@@ -23,8 +23,8 @@ class Input extends React.Component {
 			isValid: true, //TO CHANGE!!!!!!!!
 			value: event.target.value
 		})
-		//do some callback
-		console.log(this.state)
+		
+		this.props.handleFormChange(this.props.id, this.state.value, this.state.isValid)
 	}
 
 	render(){

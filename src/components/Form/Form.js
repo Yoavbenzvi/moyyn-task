@@ -30,7 +30,24 @@ class Form extends React.Component {
 	}
 
 	handleFormChange = (id, value, isValid) => {
-		console.log(id, value, isValid)
+		const newInputs = {
+			...this.state.inputs,
+			[id]: {
+				value,
+				isValid
+			}
+		}
+
+		let newValidity = true;
+		for(let input in newInputs) {
+			console.log(input)
+			newValidity = newValidity && newInputs[input].isValid;
+		}
+
+		this.setState({
+			formIsValid: newValidity,
+			inputs: newInputs
+		})
 	}
 
 	render() {
