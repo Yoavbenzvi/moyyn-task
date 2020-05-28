@@ -28,23 +28,3 @@
 	display: flex;
 	justify-content: space-between;
 }
-
-.submit-button {
-	margin: auto;
-	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-	display: block;
-	background-color: #265cff;
-	color: white; 
-	border: #265cff;
-	border-radius: 5px;
-	font-size: 0.8rem;
-	font-weight: bold;
-	transition: 0.3s;
-}
-
-.submit-button:hover {
-	color: #265cff;
-	background-color: white;
-	border: 1px solid #265cff;
-	cursor: pointer;
-}

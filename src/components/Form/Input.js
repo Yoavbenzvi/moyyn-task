@@ -16,7 +16,7 @@ class Input extends React.Component {
 	   if(type === 'email') {
 	      return /^\S+@\S+\.\S+$/.test(value);
 	   } else if(type.includes('Name')) {
-	   	return !/\d/.test(value)
+	   	return value.length > 0 && !/\d/.test(value)
 	   } else {
 	      return value.length >= length;
 	   }

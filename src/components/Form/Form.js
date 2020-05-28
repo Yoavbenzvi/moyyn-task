@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from './Input';
+import Button from './Button';
 import './Form.css';
 
 class Form extends React.Component {
@@ -49,6 +50,12 @@ class Form extends React.Component {
 		})
 	}
 
+	handleSubmit = () => {
+		if(this.state.formIsValid) {
+			console.log('submit') //do something with the submit
+		}
+	}
+
 	render() {
 		return(
 			<div className='body-form'>
@@ -95,9 +102,11 @@ class Form extends React.Component {
 							len={6}
 						/>	
 					</div>
-					<button disabled type='submit' className='submit-button'>
-						Create Account
-					</button>
+					<Button 
+						handleClick={this.handleSubmit}
+						text='Create Account' 
+						active={this.state.formIsValid} 
+					/>
 				</form>
 			</div>
 		)
