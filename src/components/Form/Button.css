@@ -1,0 +1,29 @@
+.button-default {
+	margin: 0 auto 1rem auto;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	background-color: #265cff;
+	color: white; 
+	border: #265cff;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	transition: 0.3s;
+}
+
+.button-default:hover {
+	color: #265cff;
+	background-color: white;
+	border: 1px solid #265cff;
+	cursor: pointer;
+}
+
+.button-disabled {
+	margin: 0 auto 1rem auto;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	background-color: #ccc;
+	color: #979797; 
+	border: #265cff;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	cursor: not-allowed;
+	transition: 0.3s;
+}

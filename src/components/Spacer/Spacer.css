@@ -1,0 +1,17 @@
+.spacer-main {
+	display: flex;
+}
+
+.spacer-left {
+	width: 40%;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.spacer-right {
+	width: 60%;
+	margin: auto;
+	font-size: 2rem;
+	font-weight: bold;
+}
