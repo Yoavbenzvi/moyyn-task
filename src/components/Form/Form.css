@@ -1,0 +1,18 @@
+.body-form {
+	background-color: #265cff;
+	height: 100vh;
+}
+
+.main-form {
+	margin: auto;
+	background-color: white;
+	border: 3rem solid #e8f8ff;
+	border-radius: 20px;
+	height: 50%;
+	width: 25%;
+}
+
+.body-form h2 {
+	color: white;
+	font-size: 2rem;
+}

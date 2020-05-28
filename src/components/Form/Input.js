@@ -1,11 +1,11 @@
 import React from 'react';
 
-const X = () => {
+const Input = () => {
 	return(
 		<div>
-			X
+			Input
 		</div>
 	)
 }
 
-export default X
+export default Input

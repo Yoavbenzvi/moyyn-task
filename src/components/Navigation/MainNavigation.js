@@ -6,7 +6,7 @@ const MainNavigation = () => {
 	return(
 		<nav className='main-navigation'>
 			<div>
-				LOGO
+				Moyyn
 			</div>
 			<NavButtons />
 		</nav>

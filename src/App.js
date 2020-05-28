@@ -1,11 +1,12 @@
 import React from 'react';
 import MainNavigation from './components/Navigation/MainNavigation';
+import Form from './components/Form/Form';
 
 const App = () => {
   return (
     <div className="">
       <MainNavigation />
-   	{/*body*/}
+   	<Form />
    	{/*footer*/}
     </div>  
   );
