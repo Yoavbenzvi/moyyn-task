@@ -14,6 +14,13 @@ input {
   	padding: 0.15rem 0.25rem;
 }
 
+p {
+	padding: 0;
+	margin: 0;
+	font-size: 0.6rem;
+	color: red;
+}
+
 .input-component {
 	margin-top: 0.2rem;
 	margin-bottom: 0.2rem;

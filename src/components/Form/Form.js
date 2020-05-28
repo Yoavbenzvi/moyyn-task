@@ -62,8 +62,8 @@ class Form extends React.Component {
 								id='firstName'
 								type='text'
 								placeholder='Enter your first name'
-								label='First-Name'
-								errorText='Please enter a valid'
+								label='First Name'
+								errorText='Please enter a valid name'
 								handleFormChange={this.handleFormChange}
 								len={2}
 							/>	
@@ -71,8 +71,8 @@ class Form extends React.Component {
 								id='lastName'
 								type='text'
 								placeholder='Enter your last name'
-								label='Last-Name'
-								errorText='Please enter a valid'
+								label='Last Name'
+								errorText='Please enter a valid name'
 								handleFormChange={this.handleFormChange}
 								len={2}
 							/>	
@@ -82,7 +82,7 @@ class Form extends React.Component {
 							type='email'
 							placeholder='Enter your email'
 							label='Email'
-							errorText='Please enter a valid'
+							errorText='Please enter a valid email address'
 							handleFormChange={this.handleFormChange}
 						/>	
 						<Input 
@@ -90,12 +90,12 @@ class Form extends React.Component {
 							type='password'
 							placeholder='Enter your last password'
 							label='Password'
-							errorText='Please enter a valid'
+							errorText='Please enter a valid password (at least 6 characters)'
 							handleFormChange={this.handleFormChange}
 							len={6}
 						/>	
 					</div>
-					<button type='submit' className='submit-button'>
+					<button disabled type='submit' className='submit-button'>
 						Create Account
 					</button>
 				</form>

@@ -1,9 +1,18 @@
 .main-navigation {
-	padding: 1rem;
+	padding: 0.4rem;
 	background-color: white;
 	position: sticky;
 	top: 0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.logo {
+	font-size: 0.8rem;
+	text-shadow: 1px 0 #888888;
+	letter-spacing:2px;
+	color: #265cff;
+	font-weight: 900;
+	text-decoration: none;
 }

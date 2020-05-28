@@ -5,10 +5,10 @@ import './NavButtons.css';
 const NavButtons = () => {
 	return(
 		<div className='navigation-buttons'>
-			<Navlink text={'dummy'}></Navlink>
-			<Navlink text={'dummy'}></Navlink>
-			<Navlink text={'dummy'}></Navlink>
-			<Navlink text={'dummy'}></Navlink>
+			<Navlink text={'For companies'}></Navlink>
+			<Navlink text={'For Candidates'}></Navlink>
+			<Navlink text={'Register'} classNames='link-border'></Navlink>
+			<Navlink text={'Login'} classNames='link-border'></Navlink>
 		</div>
 	)
 }

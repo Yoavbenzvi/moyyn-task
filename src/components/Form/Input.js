@@ -18,7 +18,7 @@ class Input extends React.Component {
 	   } else if(type.includes('Name')) {
 	   	return !/\d/.test(value)
 	   } else {
-	      return value.length > length;
+	      return value.length >= length;
 	   }
 	}
 
@@ -29,9 +29,10 @@ class Input extends React.Component {
 	}
 
 	handleInputChange = async (event) => {
-		console.log(this.validation(event.target.value, this.props.id, this.props.len))
+		const validity = this.validation(event.target.value, this.props.id, this.props.len)
+		
 		await this.setState({
-			isValid: this.validation(event.target.value, this.props.id, this.props.len),
+			isValid: validity,
 			value: event.target.value
 		})
 		
@@ -43,6 +44,7 @@ class Input extends React.Component {
 			<div className='input-component'>
 				<label>{this.props.label}</label>
 				<input 
+					className={`${this.state.isTouched && !this.state.isValid && 'invalid'}`}
 					id={this.props.id} 
 					type={this.props.type}
 					placeholder={this.props.placeholder}
@@ -57,6 +59,3 @@ class Input extends React.Component {
 }
 
 export default Input
-
-	// onChange={changeHandler}
-	// onBlur={touchHandler}
