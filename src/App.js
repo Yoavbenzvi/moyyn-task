@@ -1,9 +1,12 @@
 import React from 'react';
+import MainNavigation from './components/Navigation/MainNavigation';
 
 const App = () => {
   return (
     <div className="">
-      app
+      <MainNavigation />
+   	{/*body*/}
+   	{/*footer*/}
     </div>  
   );
 }

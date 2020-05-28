@@ -1,11 +1,12 @@
 import React from 'react';
+import './Navlink.css';
 
-const X = () => {
+const Navlink = ({ text, path, classNames}) => {
 	return(
-		<div>
-			X
+		<div onClick={() => console.log('click')} className={`navigation-link ${classNames}`}>
+			{text}
 		</div>
 	)
 }
 
-export default X
+export default Navlink
