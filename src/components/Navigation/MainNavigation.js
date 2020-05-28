@@ -5,7 +5,7 @@ import './MainNavigation.css';
 const MainNavigation = () => {
 	return(
 		<nav className='main-navigation'>
-			<div>
+			<div style={{color: '#265cff', fontWeight: 'bold'}}>
 				Moyyn
 			</div>
 			<NavButtons />
