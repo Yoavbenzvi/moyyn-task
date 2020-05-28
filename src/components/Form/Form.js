@@ -40,7 +40,6 @@ class Form extends React.Component {
 
 		let newValidity = true;
 		for(let input in newInputs) {
-			console.log(input)
 			newValidity = newValidity && newInputs[input].isValid;
 		}
 
@@ -66,6 +65,7 @@ class Form extends React.Component {
 								label='First-Name'
 								errorText='Please enter a valid'
 								handleFormChange={this.handleFormChange}
+								len={2}
 							/>	
 							<Input 
 								id='lastName'
@@ -74,6 +74,7 @@ class Form extends React.Component {
 								label='Last-Name'
 								errorText='Please enter a valid'
 								handleFormChange={this.handleFormChange}
+								len={2}
 							/>	
 						</div>
 						<Input 
@@ -91,6 +92,7 @@ class Form extends React.Component {
 							label='Password'
 							errorText='Please enter a valid'
 							handleFormChange={this.handleFormChange}
+							len={6}
 						/>	
 					</div>
 					<button type='submit' className='submit-button'>

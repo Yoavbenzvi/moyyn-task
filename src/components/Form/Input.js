@@ -12,6 +12,16 @@ class Input extends React.Component {
 		}
 	}
 
+	validation = (value, type, length) => {
+	   if(type === 'email') {
+	      return /^\S+@\S+\.\S+$/.test(value);
+	   } else if(type.includes('Name')) {
+	   	return !/\d/.test(value)
+	   } else {
+	      return value.length > length;
+	   }
+	}
+
 	handleTouch = () => {
 		this.setState({
 			isTouched: true
@@ -19,8 +29,9 @@ class Input extends React.Component {
 	}
 
 	handleInputChange = async (event) => {
+		console.log(this.validation(event.target.value, this.props.id, this.props.len))
 		await this.setState({
-			isValid: true, //TO CHANGE!!!!!!!!
+			isValid: this.validation(event.target.value, this.props.id, this.props.len),
 			value: event.target.value
 		})
 		
@@ -39,7 +50,7 @@ class Input extends React.Component {
 					value={this.state.value}
 					onChange={this.handleInputChange}
 				/> 
-				{this.state.isTouched && <p>{this.props.errorText}</p>}
+				{this.state.isTouched && !this.state.isValid && <p>{this.props.errorText}</p>}
 			</div>
 		)
 	}
