@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Moyyn-Task/static/css/main.04b332e8.chunk.css",
+    "main.js": "/Moyyn-Task/static/js/main.d1ffc67d.chunk.js",
+    "main.js.map": "/Moyyn-Task/static/js/main.d1ffc67d.chunk.js.map",
+    "runtime-main.js": "/Moyyn-Task/static/js/runtime-main.4a9ffa70.js",
+    "runtime-main.js.map": "/Moyyn-Task/static/js/runtime-main.4a9ffa70.js.map",
+    "static/js/2.7da5140a.chunk.js": "/Moyyn-Task/static/js/2.7da5140a.chunk.js",
+    "static/js/2.7da5140a.chunk.js.map": "/Moyyn-Task/static/js/2.7da5140a.chunk.js.map",
+    "index.html": "/Moyyn-Task/index.html",
+    "precache-manifest.33ee03a739794049336db80ea4a1a9bc.js": "/Moyyn-Task/precache-manifest.33ee03a739794049336db80ea4a1a9bc.js",
+    "service-worker.js": "/Moyyn-Task/service-worker.js",
+    "static/css/main.04b332e8.chunk.css.map": "/Moyyn-Task/static/css/main.04b332e8.chunk.css.map",
+    "static/js/2.7da5140a.chunk.js.LICENSE.txt": "/Moyyn-Task/static/js/2.7da5140a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a9ffa70.js",
+    "static/js/2.7da5140a.chunk.js",
+    "static/css/main.04b332e8.chunk.css",
+    "static/js/main.d1ffc67d.chunk.js"
+  ]
+}
