@@ -2,3 +2,34 @@
 	display: flex;
 	justify-content: space-around;
 }
+
+@media screen and (max-width: 768px) {
+	.navigation-buttons {
+		display: none;
+	} 
+
+	.hamburger-button {
+		width: 3rem;
+		height: 3rem;
+		background: transparent;
+		border: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		cursor: pointer;
+	}
+
+	.hamburger-button span {
+		display: block;
+		width: 3rem;
+		height: 0.2rem;
+		background: black;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.hamburger-button {
+		display: none;
+	}
+}
+

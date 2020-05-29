@@ -16,3 +16,9 @@
 	font-weight: 900;
 	text-decoration: none;
 }
+
+@media (max-width: 768px) {
+	.logo {
+		font-size: 1.2rem;
+	}
+}
