@@ -22,12 +22,18 @@ p {
 }
 
 .input-component {
-	margin-top: 0.2rem;
-	margin-bottom: 0.2rem;
+	margin: 0.35rem;
 }
 
 .invalid {
 	color: red;
 	border-color: red;
   	background: #ffd1d1;
+}
+
+@media screen and (max-width: 768px) {
+	.input-component {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
