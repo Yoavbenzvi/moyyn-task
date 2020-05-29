@@ -4,6 +4,8 @@ import Backdrop from "./SideBar/Backdrop";
 import SideDrawer from "./SideBar/SideDrawer";
 import "./MainNavigation.css";
 
+//Component uses useState to handle sidbar render, along with css and media queries
+
 const MainNavigation = () => {
 	const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 

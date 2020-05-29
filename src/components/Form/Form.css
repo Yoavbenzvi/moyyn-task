@@ -3,6 +3,11 @@
 	height: 100vh;
 }
 
+.body-form h2 {
+	color: white;
+	font-size: 2rem;
+}
+
 .main-form {
 	margin: auto;
 	background-color: white;
@@ -15,11 +20,6 @@
 	justify-content: space-around;
 }
 
-.body-form h2 {
-	color: white;
-	font-size: 2rem;
-}
-
 .fields-form {
 	padding: 0.8rem 3rem;
 }
@@ -29,7 +29,6 @@
 	justify-content: space-between;
 }
 
-/*!!!!this*/
 .fields-name * {
 	width: 80%;
 }
@@ -66,7 +65,6 @@
 
 	.fields-name * {
 		align-self: center;
-		/*!!!!!this*/
 		width: auto;
 	}
 }

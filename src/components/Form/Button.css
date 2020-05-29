@@ -19,7 +19,7 @@
 .button-disabled {
 	margin: 0 auto 1rem auto;
 	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-	background-color: #ccc;
+	background-color: #cccccc;
 	color: #979797;
 	border: #265cff;
 	border-radius: 5px;

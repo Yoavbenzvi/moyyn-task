@@ -1,6 +1,8 @@
 import React from "react";
 import "./Button.css";
 
+//Dynamic button components, text, action (function) and style are determined by parent component
+
 const Button = ({ text, active, handleClick }) => {
 	return (
 		<div

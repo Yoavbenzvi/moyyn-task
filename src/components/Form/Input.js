@@ -12,6 +12,8 @@ class Input extends React.Component {
 		};
 	}
 
+	//A simple validation function, can be easily added to add/remove criteria
+	//Currently has seperate checks for names, email and password
 	validation = (value, type, length) => {
 		if (type === "email") {
 			return /^\S+@\S+\.\S+$/.test(value);
@@ -22,6 +24,7 @@ class Input extends React.Component {
 		}
 	};
 
+	//Changing state if component was touched
 	handleTouch = () => {
 		this.setState({
 			isTouched: true,
@@ -29,17 +32,20 @@ class Input extends React.Component {
 	};
 
 	handleInputChange = async (event) => {
+		//Checking field validity with the validation method
 		const validity = this.validation(
 			event.target.value,
 			this.props.id,
 			this.props.len
 		);
 
+		//Setting state
 		await this.setState({
 			isValid: validity,
 			value: event.target.value,
 		});
 
+		//Running the callback function recieved from parent
 		this.props.handleFormChange(
 			this.props.id,
 			this.state.value,

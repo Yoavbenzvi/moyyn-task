@@ -6,9 +6,9 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
--webkit-box-shadow: 0px -8px 51px -11px rgba(0,0,0,0.57);
--moz-box-shadow: 0px -8px 51px -11px rgba(0,0,0,0.57);
-box-shadow: 0px -8px 51px -11px rgba(0,0,0,0.57);
+	-webkit-box-shadow: 0px -8px 51px -11px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px -8px 51px -11px rgba(0,0,0,0.57);
+	box-shadow: 0px -8px 51px -11px rgba(0,0,0,0.57);
 }
 
 .logo {

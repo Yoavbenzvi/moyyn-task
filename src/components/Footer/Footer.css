@@ -8,6 +8,7 @@ footer {
 footer a {
 	color: #888888;
 	text-decoration: none;
+	transition: 0.3s;
 }
 
 footer a:hover {

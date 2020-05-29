@@ -30,7 +30,9 @@ class Form extends React.Component {
 		};
 	}
 
+	//Method to be ran on every input change, passed down as props to children
 	handleFormChange = (id, value, isValid) => {
+		//Creating new inputs state with the given arguments
 		const newInputs = {
 			...this.state.inputs,
 			[id]: {
@@ -39,20 +41,23 @@ class Form extends React.Component {
 			},
 		};
 
+		//Checking form validity (iterating through all inputs to check if they are valid) and determines form validity
 		let newValidity = true;
 		for (let input in newInputs) {
 			newValidity = newValidity && newInputs[input].isValid;
 		}
 
+		//Setting form state
 		this.setState({
 			formIsValid: newValidity,
 			inputs: newInputs,
 		});
 	};
 
+	//Dummy submit method, runs a fcuntion on inputs (currently only console logs) if form is valid
 	handleSubmit = () => {
 		if (this.state.formIsValid) {
-			console.log("submit"); //do something with the submit
+			console.log(this.state.inputs); //do something with the submit
 		}
 	};
 
@@ -68,7 +73,7 @@ class Form extends React.Component {
 							<Input
 								id="firstName"
 								type="text"
-								placeholder="Enter your first name"
+								placeholder="Enter first name"
 								label="First Name"
 								errorText="Please enter a valid name"
 								handleFormChange={this.handleFormChange}
@@ -77,7 +82,7 @@ class Form extends React.Component {
 							<Input
 								id="lastName"
 								type="text"
-								placeholder="Enter your last name"
+								placeholder="Enter last name"
 								label="Last Name"
 								errorText="Please enter a valid name"
 								handleFormChange={this.handleFormChange}
