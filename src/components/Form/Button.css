@@ -48,8 +48,8 @@
 	}
 
 	.button-disabled {
-		margin: 0 auto 1.5rem auto;
+		margin: 0 auto 1rem auto;
 		padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-		font-size: 0.5rem;
+		font-size: 0.8rem;
 	}
 }

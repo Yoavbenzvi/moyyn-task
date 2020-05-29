@@ -29,6 +29,11 @@
 	justify-content: space-between;
 }
 
+/*!!!!this*/
+.fields-name * {
+	width: 80%;
+}
+
 @media screen and (max-width: 768px) {
 	.body-form {
 		height: 120%;
@@ -61,5 +66,7 @@
 
 	.fields-name * {
 		align-self: center;
+		/*!!!!!this*/
+		width: auto;
 	}
 }
